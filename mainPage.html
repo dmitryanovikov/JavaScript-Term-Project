@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dmitry Novikov's Games</title>
+        <link rel="stylesheet" href="css/mainPage.css">
+    </head>
+    <body id = "container">
+        <!--
+        Audience:
+        This interface is designed for casual players and students who want to play
+        simple browser games like Memory, Checkers, and Tic-Tac-Toe. The layout
+        focuses on being easy to understand and accessible for beginners.
+
+        Layout Design:
+        The layout uses a centered single-column design. The game title and
+        instructions are placed at the top, player controls appear next,
+        and the game board is centered in the middle of the page for easy
+        interaction.
+
+        Color Scheme:
+        The site uses a dark blue radial gradient background with bright
+        interactive elements. The dark background helps the game board and
+        cards stand out while blue buttons and light text improve readability.
+        -->
+        <div id = "overlay"></div>
+        <div id = "menu">
+            <header>
+                <p>Created by Dmitry Novikov &copy;2026</p>
+                <p>To better understand the site: <a href = "readme.txt">readme.txt</a></p>
+            </header>
+            <nav class = "games" id = "ttt">Tic-Tac-Toe</nav>
+            <nav class = "games" id = "checkers">Checkers</nav>
+            <nav class = "games" id = "mcm">Memory Card Match</nav>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="js/mainPage.js"></script>
+    </body>
+</html>
