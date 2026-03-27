@@ -1,0 +1,31 @@
+///------------------------------
+///     GAME DESCRIPTION
+///------------------------------
+
+Memory Card Match is a memory-based game where players flip two
+cards at a time in an attempt to find matching pairs. If the cards
+match, they remain face up. If they do not match, they flip back
+over. The objective is to match all pairs of cards on the board.
+
+///------------------------------
+///     CURRENT PROBLEMS
+///------------------------------
+
+///------------------------------
+///     PLANS TO RESOLVE PROBLEMS
+///------------------------------
+
+///------------------------------
+///     CONTACT INFORMATION
+///------------------------------
+Author: Dmitry Novikov
+Email: novikod@mail.nmc.edu
+
+///------------------------------
+///     COPYRIGHT INFORMATION
+///------------------------------
+If any HTML file is reproduced, please provide credit to the author
+within the page interface.
+
+If any JavaScript or CSS file is reused or modified, please provide
+credit to the author within the code comments or documentation.

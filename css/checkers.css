@@ -1,0 +1,166 @@
+body {
+    background: radial-gradient(circle, #1f2a44, #0b0f1a);
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+
+    overflow-x: hidden;
+}
+
+a {
+  color: #00d4ff;
+}
+
+a:hover {
+  color: #66e6ff;
+}
+
+#gameContainer {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+#gameInfo h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.description,
+.instructions {
+    font-size: 18px;
+    max-width: 650px;
+    margin: 10px auto;
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+#playerSetup {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#playerSetup input {
+    margin: 0 10px;
+    padding: 6px;
+}
+
+#status {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#boardWrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+#board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin: 20px auto;
+
+    border: 8px solid #5a3e2b;
+    border-radius: 6px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+}
+
+.square:hover {
+    outline: 2px solid yellow;
+}
+
+.square:nth-child(16n+1), /* Start at 1, then keep jumping 16 spaces forward. */
+.square:nth-child(16n+3),
+.square:nth-child(16n+5),
+.square:nth-child(16n+7),
+.square:nth-child(16n+10),
+.square:nth-child(16n+12),
+.square:nth-child(16n+14),
+.square:nth-child(16n+16) {
+    background: #b58863;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.square:nth-child(16n+2),
+.square:nth-child(16n+4),
+.square:nth-child(16n+6),
+.square:nth-child(16n+8),
+.square:nth-child(16n+9),
+.square:nth-child(16n+11),
+.square:nth-child(16n+13),
+.square:nth-child(16n+15) {
+    background: #f0d9b5;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.red {
+    background: red;
+}
+
+.black {
+    background: black;
+}
+
+
+button {
+    padding: 8px 18px;
+    font-size: 15px;
+    background: #3a6df0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2b52b8;
+}
+
+@media (max-width: 600px) {
+
+    #board {
+        width: 95vw;
+    }
+
+    .square {
+        font-size: 28px;
+    }
+
+    #gameInfo h2 {
+        font-size: 28px;
+    }
+
+    .description,
+    .instructions {
+        font-size: 16px;
+        padding: 0 15px;
+        max-width: 100%;
+        
+    }
+
+    #playerSetup {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}

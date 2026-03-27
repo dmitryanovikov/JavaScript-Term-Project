@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memory Card Match</title>
+        <link rel="stylesheet" href="css/memoryMatch.css">
+    </head>
+    <body>
+        <div id="gameContainer">
+            
+            <div id="gameInfo">
+                <h2>Memory Card Match</h2>
+                <p>See <a href="memoryCardMatch.txt">memoryCardMatch.txt</a> for more information.</p>
+                <p class="description">
+                    Memory Card Match is a memory-based game where players flip two
+                    cards at a time in an attempt to find matching pairs. If the cards
+                    match, they remain face up. If they do not match, they flip back
+                    over. The objective is to match all pairs of cards on the board.
+                </p>
+            </div>
+
+            <p id="status">Click two cards to find a match</p>
+
+            <div id="gameBoard">
+                <div class="card" data-card="A"></div>
+                <div class="card" data-card="A"></div>
+
+                <div class="card" data-card="B"></div>
+                <div class="card" data-card="B"></div>
+
+                <div class="card" data-card="C"></div>
+                <div class="card" data-card="C"></div>
+
+                <div class="card" data-card="D"></div>
+                <div class="card" data-card="D"></div>
+
+                <div class="card" data-card="E"></div>
+                <div class="card" data-card="E"></div>
+
+                <div class="card" data-card="F"></div>
+                <div class="card" data-card="F"></div>
+            </div>
+
+            <!-- Tracks how many attempts the player has made. -->
+             <p>Moves: <span id="moveCount">0</span></p>
+
+            <!-- Timer -->
+            <p>Time: <span id="timer">0</span>s</p>
+
+            <!-- Restart Button -->
+            <button id="restartGame">Restart Game</button>
+
+            <!-- Win Message -->
+            <p id="winMessage"></p>
+
+            <!-- Navigation -->
+            <a href="mainPage.html">Back to Game Menu</a>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="js/memoryMatch.js"></script>
+    </body>
+</html>

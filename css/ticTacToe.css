@@ -1,0 +1,109 @@
+body {
+  background: radial-gradient(circle, #1f2a44, #0b0f1a);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  margin: 0;
+}
+
+a {
+  color: #00d4ff;
+}
+
+a:hover {
+  color: #66e6ff;
+}
+
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+#gameInfo {
+    color: white;
+    text-align: center;
+    width: 50%;
+}
+
+#gameInfo h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.description {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+
+    margin-top: 25px;
+}
+
+.cell {
+    background: white;
+    color: black;
+    border: 2px solid black;
+    font-size: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+button {
+  margin-top: 20px;
+  padding: 8px 18px;
+  font-size: 15px;
+  background: #3a6df0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2b52b8;
+}
+
+.winner {
+    background-color: lightgreen;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+    #gameBoard {
+        grid-template-columns: repeat(3, 70px);
+        gap: 8px;
+    }
+
+    .cell {
+        width: 70px;
+        height: 70px;
+        font-size: 28px;
+    }
+
+    #gameInfo h2 {
+        font-size: 28px;
+    }
+
+    .description,
+    .instructions {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}

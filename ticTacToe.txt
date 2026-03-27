@@ -1,0 +1,31 @@
+///------------------------------
+///     GAME DESCRIPTION
+///------------------------------
+
+Tic-Tac-Toe is the classic strategy game played on a 3x3 grid.
+Two players take turns placing X and O on the board. The objective
+is to place three of your symbols in a row horizontally, vertically,
+or diagonally before your opponent does.
+
+///------------------------------
+///     CURRENT PROBLEMS
+///------------------------------
+
+///------------------------------
+///     PLANS TO RESOLVE PROBLEMS
+///------------------------------
+
+///------------------------------
+///     CONTACT INFORMATION
+///------------------------------
+Author: Dmitry Novikov
+Email: novikod@mail.nmc.edu
+
+///------------------------------
+///     COPYRIGHT INFORMATION
+///------------------------------
+If any HTML file is reproduced, please provide credit to the author
+within the page interface.
+
+If any JavaScript or CSS file is reused or modified, please provide
+credit to the author within the code comments or documentation.

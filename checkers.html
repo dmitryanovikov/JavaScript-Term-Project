@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkers</title>
+        <link rel="stylesheet" href="css/checkers.css">
+    </head>
+    <body>
+        <div id="gameContainer">
+            
+            <div id="gameInfo">
+                <h2>Checkers</h2>
+                <p class="description">
+                    Checkers is a traditional board game played between two players.
+                    Players move their pieces diagonally across the board and capture
+                    opponent pieces by jumping over them. The goal is to capture all of
+                    the opponent's pieces or block them so they cannot make any moves.
+                </p>
+                <p class="instructions">
+                    Click a piece to select it, then click a square to move.
+                </p>
+            </div>
+
+            <div id="playerSetup">
+                <label>Red Player:</label>
+                <input type="text" id="playerRed" placeholder="Enter name">
+
+                <label>Black Player:</label>
+                <input type="text" id="playerBlack" placeholder="Enter name">
+
+                <button type="button" id="startGame">Start Game</button>
+            </div>
+
+            <!-- Turn Indicator -->
+            <p id="status">Red Player's Turn</p>
+
+            <div id="boardWrapper">
+                <!-- Game Board -->
+                <div id="board">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+            </div>
+
+            <p id="winnerMessage"></p>
+
+            <!-- Restart Button -->
+            <button type="button" id="restartBtn">Restart Game</button>
+
+            <!-- Scoreboard -->
+            <div id="scoreboard">
+                <p>Red Wins: <span id="redWins">0</span></p>
+                <p>Black Wins: <span id="blackWins">0</span></p>
+            </div>
+
+            <!-- Navigation -->
+            <a href="mainPage.html">Back to Game Menu</a>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="js/checkers.js"></script>
+    </body>
+</html>

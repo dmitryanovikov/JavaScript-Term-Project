@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="css/ticTacToe.css">
+    </head>
+    <body>
+        <div id="gameContainer">
+            
+            <div id="gameInfo">
+                <h2>Tic Tac Toe</h2>
+                <p>See <a href="ticTacToe.txt">ticTacToe.txt</a> for more information.</p>
+                <p class="description">
+                    Tic-Tac-Toe is the classic strategy game played on a 3x3 grid.
+                    Two players take turns placing X and O on the board. The objective
+                    is to place three of your symbols in a row horizontally, vertically,
+                    or diagonally before your opponent does.
+                </p>
+            </div>
+
+            <!-- Turn Indicator -->
+            <p id="status">Player X's Turn</p>
+
+            <!-- Game Board -->
+            <div id="board">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+
+            <!-- Restart Button -->
+            <button id="restartBtn">Restart Game</button>
+
+            <!-- Scoreboard -->
+            <div id="scoreboard">
+                <p>X Wins: <span id="xWins">0</span></p>
+                <p>O Wins: <span id="oWins">0</span></p>
+            </div>
+
+            <!-- Navigation -->
+            <a href="mainPage.html">Back to Game Menu</a>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="js/ticTacToe.js"></script>
+    </body>
+</html>
