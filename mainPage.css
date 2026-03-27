@@ -1,0 +1,39 @@
+body {
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+a {
+  color: #00d4ff;
+}
+a:hover {
+  color: #66e6ff;
+}
+
+#menu {
+  width: 400px;
+  padding: 30px;
+  margin: auto; /* centers the menu horizontally */
+  font-size: 20px;
+  text-align: center;
+
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.games {
+  background: #00d4ff;
+  color: black;
+  padding: 20px;
+  margin: 15px auto; /* auto left/right centers them */
+  font-size: 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 200px;
+}
