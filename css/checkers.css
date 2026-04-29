@@ -66,47 +66,10 @@ a:hover {
     display: flex;
     justify-content: center;
 }
-#board {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    margin: 20px auto;
-
+#boardCanvas {
     border: 8px solid #5a3e2b;
     border-radius: 6px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 500px;
-}
-
-.square:hover {
-    outline: 2px solid yellow;
-}
-
-.square:nth-child(16n+1), /* Start at 1, then keep jumping 16 spaces forward. */
-.square:nth-child(16n+3),
-.square:nth-child(16n+5),
-.square:nth-child(16n+7),
-.square:nth-child(16n+10),
-.square:nth-child(16n+12),
-.square:nth-child(16n+14),
-.square:nth-child(16n+16) {
-    background: #b58863;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-}
-
-.square:nth-child(16n+2),
-.square:nth-child(16n+4),
-.square:nth-child(16n+6),
-.square:nth-child(16n+8),
-.square:nth-child(16n+9),
-.square:nth-child(16n+11),
-.square:nth-child(16n+13),
-.square:nth-child(16n+15) {
-    background: #f0d9b5;
-    width: 100%;
-    aspect-ratio: 1 / 1;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
 }
 
 .red {
@@ -133,14 +96,6 @@ button:hover {
 }
 
 @media (max-width: 600px) {
-
-    #board {
-        width: 95vw;
-    }
-
-    .square {
-        font-size: 28px;
-    }
 
     #gameInfo h2 {
         font-size: 28px;

@@ -11,6 +11,7 @@
             
             <div id="gameInfo">
                 <h2>Checkers</h2>
+                <p>See <a href="readme/checkers.txt">checkers.txt</a> for more information.</p>
                 <p class="description">
                     Checkers is a traditional board game played between two players.
                     Players move their pieces diagonally across the board and capture
@@ -22,87 +23,12 @@
                 </p>
             </div>
 
-            <div id="playerSetup">
-                <label>Red Player:</label>
-                <input type="text" id="playerRed" placeholder="Enter name">
-
-                <label>Black Player:</label>
-                <input type="text" id="playerBlack" placeholder="Enter name">
-
-                <button type="button" id="startGame">Start Game</button>
-            </div>
-
             <!-- Turn Indicator -->
             <p id="status">Red Player's Turn</p>
 
             <div id="boardWrapper">
                 <!-- Game Board -->
-                <div id="board">
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                </div>
+                <canvas id="boardCanvas" width="400" height="400"></canvas>
             </div>
 
             <p id="winnerMessage"></p>
